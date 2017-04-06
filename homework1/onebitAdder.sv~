@@ -1,0 +1,10 @@
+module onebitAdder ( input A,
+				     input B,
+				     input Cin,
+				     output Sum,
+				     output Cout); 
+				 
+assign  S = A ^ B ^ Cin; 
+assign	Cout = (A & B) | (A & 
+
+endmodule 
