@@ -3,7 +3,7 @@ module onebitAdder ( input A,
 		     input Cin,
 		     output S,
 		     output Cout);
-wire N1,N2,N3; 
+logic N1,N2,N3; 
 
 	     
 XNOR sum1(N1,A,B); 
