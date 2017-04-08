@@ -1,0 +1,8 @@
+{C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/onebitAdder.sv} {1 {vlog -work work -sv {+incdir+C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1} -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/onebitAdder.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module onebitAdder
+
+Top level modules:
+	onebitAdder
+
+} {} {}}
