@@ -16,21 +16,24 @@ generate
 for(i = 0; i < width; i++)
 begin: onebitAdder_initilization
     if(i==1) begin 
-	onebitAdder(.A(A[i]),
+	onebitAdder nadder(
+				.A(A[i]),
 				.B(B[i]),
 				.Cin(Cin),
 				.S(S[i]),
 				.Cout(Nwires[i]));	
 	end
 	else if(i == width-1) begin
-	onebitAdder(.A(A[i]),
+	onebitAdder nadder(
+				.A(A[i]),
 				.B(B[i]),
 				.Cin(Nwires[i-1]),
 				.S(S[i]),
 				.Cout(Cout));
 	end
 	else begin 
-	onebitAdder(.A(A[i]),
+	onebitAdder nadder(
+				.A(A[i]),
 				.B(B[i]),
 				.Cin(Nwires[i-1]),
 				.S(S[i]),

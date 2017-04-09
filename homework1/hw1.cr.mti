@@ -5,4 +5,24 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	onebitAdder
 
+} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fibonacci.sv} {0 {vlog -work work -sv -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fibonacci.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fibonacci
+** Error: (vlog-13069) C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fibonacci.sv(4): near "parameter": syntax error, unexpected parameter, expecting ';'.
+
+
+} {4.0 5.0} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/tb.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fullAdder.sv} {1 {vlog -work work -sv {+incdir+C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1} -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fullAdder.sv}
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module fullAdder
+
+Top level modules:
+	fullAdder
+
 } {} {}}
