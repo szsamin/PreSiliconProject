@@ -1,31 +1,34 @@
-module fibonacci(clk, reset_n, clear, load, data_in, order, data_out, done, overflw);
+`timescale 1ns/1ps
+
+module fibonacci(clk, reset_n, clear, load, data_in, order, data_out, done, overflw, error);
 
 /* input parameter */ 
-parameter width = 64; 
+parameter DATA_WIDTH = 64;
+parameter FIB_ORDER  = 16;
 
 /* input signals */ 
 input clk;
 input reset_n;
 input load;
 input clear; 
-input logic [width-1:0] data_in; 
-input logic [width-1:0] order;
+input logic [DATA_WIDTH-1:0] data_in; 
+input logic [FIB_ORDER-1:0] order;
 
 /* output signals */ 
-output logic [width-1:0] data_out; 
-output logic done, overflw;
+output logic [DATA_WIDTH-1:0] data_out; 
+output logic error, done, overflw;
 
 /* wires */ 
-logic [width-1:0] data_A; 
-logic [width-1:0] data_B;
-logic [width-1:0] data_sum; 
+logic [DATA_WIDTH-1:0] data_A; 
+logic [DATA_WIDTH-1:0] data_B;
+logic [DATA_WIDTH-1:0] data_sum; 
 logic Cin; 
 logic Cout;
 
-logic [width-1:0] count = '0; 
+int count = '1; 
 
 /* wires */ 
-logic [width-1:0] prevprev,prevcurrent, tempdata; 
+logic [DATA_WIDTH-1:0] prevprev,prevcurrent, tempdata; 
 
 
 typedef enum logic[7:0] { RESET, IDLE, LOAD, ERROR, ADD, OVRFLW, DONE} states; 
@@ -48,6 +51,7 @@ begin
 	    // clear <= '0;
 		data_out <= '0;
 		done <= '0;
+		error <= '0; 
 		overflw <= '0; 
 	    data_B <= '0;
 		data_A <= '0;
@@ -64,11 +68,12 @@ begin
 						nextState <= IDLE; 
 				   end
 				   else begin 
-				   	count <= '0; 
+				   	count <= '1; 
 					// clear <= '0; 
 					data_out <= '0;
 					done <= '0;
 					overflw <= '0; 
+					error <= '0; 
 					data_B <= '0;
 					data_A <= '0;
 					data_out <= '0; 
@@ -78,11 +83,12 @@ begin
 				   end 
 			end 
 			IDLE: begin
-					count <= '0; 
+					count <= '1; 
 					// clear <= '0;
 					data_out <= '0;
 					done <= '0; 
-					overflw <= '0; 
+					overflw <= '0;
+					error <= '0; 
 					data_B <= '0;
 					data_A <= '0; 
 					data_out <= '0; 
@@ -97,7 +103,7 @@ begin
 				  end 
 			end 
 			LOAD: begin
-				  if((order == '0) || (data_in == '0)) begin 
+				  if((order == '0) || (data_in == '0)) begin
 						nextState <= ERROR; 
 				  end
 				  else if(!load) begin
@@ -112,6 +118,7 @@ begin
 						nextState <= IDLE; 
 				   end 
 				   else begin 
+				        error = '1;  
 						nextState <= ERROR; 
 				   end 
 			end 
@@ -121,14 +128,12 @@ begin
 					prevprev <= data_A; 
 					count <= (prevcurrent != data_sum)? count : count + 1;
 					prevcurrent <= data_sum;
-					done <= (count == order) ? 1:0; 
-					overflw <= (Cout == 1) ? 1:0; 
-					if(done) begin
-						done <= '1; 
+					// done <= (count == order) ? 1:0; 
+					// overflw <= (Cout == 1) ? 1:0; 
+					if(count == order) begin
 						nextState <= DONE; 
 					end
-					else if(overflw) begin
-						overflw <= '1; 
+					else if(Cout == 1) begin
 						nextState <= OVRFLW; 
 					end 
 					else if(count < order) begin 
@@ -136,6 +141,7 @@ begin
 					end
 			end 
 			DONE: begin
+				  done <= '1; 	
 				  data_out <= data_sum;
 				  nextState <= IDLE; 
 			end 
@@ -144,6 +150,7 @@ begin
 						nextState <= IDLE; 
 					end 
 					else begin
+					    overflw <= '1; 
 						data_out <= '1; 
 						nextState <= OVRFLW; 
 					end 

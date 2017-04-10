@@ -10,7 +10,7 @@ cModel Technology
 dC:/Modeltech_pe_edu_10.4a/examples
 vAND
 Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
-Z1 !s110 1491781894
+Z1 !s110 1491808614
 !i10b 1
 !s100 LRQM_S9lY][a4d8a5b1_o1
 I@N<?Tz1m?AJk4Uzhd?;dg1
@@ -26,27 +26,48 @@ Z4 OP;L;10.4a;61
 r1
 !s85 0
 31
-Z5 !s108 1491781894.000000
+Z5 !s108 1491808614.000000
 !s107 C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/AND.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/AND.sv|
 !s101 -O0
 !i113 1
 Z6 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 n@a@n@d
+vfib_num_test
+Z7 !s110 1491808615
+!i10b 1
+!s100 `IkN;UBcMfjzaUYJX=6>G1
+IC[6hN6NjO=7<VadIXFz1k2
+R2
+R3
+w1491718626
+8C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fib_num_test.v
+FC:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fib_num_test.v
+L0 14
+R4
+r1
+!s85 0
+31
+Z8 !s108 1491808615.000000
+!s107 C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fib_num_test.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fib_num_test.v|
+!s101 -O0
+!i113 1
+o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 vfibonacci
 R0
 R1
 !i10b 1
-!s100 DaQF9XkX9WH?RE5?1H3MR0
-IcVMoYXL1lXfejZ1PVf_lG2
+!s100 8k6BJ]OK:?=O64<z;>KNK3
+IWBNY<4`4d^mHB9Q<e79WZ3
 R2
 !s105 fibonacci_sv_unit
 S1
 R3
-w1491780019
+w1491808428
 8C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fibonacci.sv
 FC:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fibonacci.sv
-L0 1
+L0 3
 R4
 r1
 !s85 0
@@ -61,13 +82,13 @@ vfullAdder
 R0
 R1
 !i10b 1
-!s100 @?QE8`UB]jcJDcUUZ4i:H1
-ICPEFdZPQ2L4ANTZF_25YG2
+!s100 PzHORgEeh6FL8M`UR0;CJ3
+IUbR2S;IVC3UaoR9<7SXB?2
 R2
 !s105 fullAdder_sv_unit
 S1
 R3
-w1491701651
+w1491798730
 8C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fullAdder.sv
 FC:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fullAdder.sv
 L0 1
@@ -81,7 +102,7 @@ R5
 !s101 -O0
 !i113 1
 R6
-Z7 !s92 -work work -sv {+incdir+C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
+Z9 !s92 -work work -sv {+incdir+C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1} -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact -O0
 nfull@adder
 vonebitAdder
 R0
@@ -107,11 +128,11 @@ R5
 !s101 -O0
 !i113 1
 R6
-R7
+R9
 nonebit@adder
 vOR
 R0
-R1
+R7
 !i10b 1
 !s100 C>hi12TM;f=1=^i;[8_gY1
 IV?zZejO=98_PZ=8VPZ>9l2
@@ -127,7 +148,7 @@ R4
 r1
 !s85 0
 31
-R5
+R8
 !s107 C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/OR.sv|
 !s90 -reportprogress|300|-work|work|-sv|-stats=none|C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/OR.sv|
 !s101 -O0
@@ -138,16 +159,16 @@ vtb
 R0
 R1
 !i10b 1
-!s100 9Z1R]C3C>I2KJ@EImUndK3
-I;5ZJ3_la:2X>g:QhOniCc3
+!s100 g220fmKh_0a@IOBbLJhOE0
+IcDP1Ng4Wk<7k`:THOA:b_2
 R2
 !s105 tb_sv_unit
 S1
 R3
-w1491781886
+w1491807032
 8C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/tb.sv
 FC:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/tb.sv
-L0 1
+L0 3
 R4
 r1
 !s85 0

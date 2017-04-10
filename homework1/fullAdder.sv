@@ -1,7 +1,6 @@
 module fullAdder(A,B,Cin,S,Cout); 
 
 parameter width = 64; 
-
 	
 input [width-1:0] A;
 input [width-1:0] B;
