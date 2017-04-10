@@ -1,16 +1,16 @@
 module onebitAdder ( input A,
 	   	     input B,
 		     input Cin,
-		     output S,
-		     output Cout);
+		     output logic S,
+		     output logic Cout);
 logic N1,N2,N3; 
 
 	     
-XNOR sum1(N1,A,B); 
-XNOR sumout(S,N1,Cin); 
+XOR sum1(N1,A,B); 
+XOR sumout(S,N1,Cin); 
 
-AND carry1(N2, A, Cin);
-AND carry2(N3, B, Cin); 
+AND carry1(N2, N1, Cin);
+AND carry2(N3, A, B); 
 
 OR  carryout(Cout, N2, N3);
 
