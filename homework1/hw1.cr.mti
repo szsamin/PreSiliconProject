@@ -5,46 +5,4 @@ Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 
 Top level modules:
 	fib_num_test
 
-} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/onebitAdder.sv} {1 {vlog -work work -sv {+incdir+C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1} -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/onebitAdder.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module onebitAdder
-
-Top level modules:
-	onebitAdder
-
-} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/OR.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/OR.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module OR
-
-Top level modules:
-	OR
-
-} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/XOR.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/XOR.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module XOR
-
-Top level modules:
-	XOR
-
-} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/tb.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/tb.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module tb
-
-Top level modules:
-	tb
-
-} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fullAdder.sv} {1 {vlog -work work -sv {+incdir+C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1} -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fullAdder.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module fullAdder
-
-Top level modules:
-	fullAdder
-
-} {} {}} {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/AND.sv} {1 {vlog -work work -sv -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/AND.sv}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module AND
-
-Top level modules:
-	AND
-
 } {} {}}
