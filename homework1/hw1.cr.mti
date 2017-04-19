@@ -1,8 +1,50 @@
-{C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fib_num_test.v} {1 {vlog -work work -stats=none {C:/Users/Shadman/Desktop/School Work/PreSiliconSpring2017/PreSiliconProject/homework1/fib_num_test.v}
-Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
--- Compiling module fib_num_test
+{//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/OR.sv} {1 {vlog -work work -vopt -sv -stats=none {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/OR.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module OR
 
 Top level modules:
-	fib_num_test
+	OR
+
+} {} {}} {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/onebitAdder.sv} {1 {vlog -work work -vopt -sv -stats=none {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/onebitAdder.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module onebitAdder
+
+Top level modules:
+	onebitAdder
+
+} {} {}} {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/XOR.sv} {1 {vlog -work work -vopt -sv -stats=none {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/XOR.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module XOR
+
+Top level modules:
+	XOR
+
+} {} {}} {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/tb.sv} {1 {vlog -work work -vopt -sv -stats=none {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/tb.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module tb
+
+Top level modules:
+	tb
+
+} {} {}} {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/fibonacci.sv} {1 {vlog -work work -vopt -sv -stats=none {\\khensu\Home01\shadman\Desktop\School Work\ECE593\PreSiliconProject\homework1\fibonacci.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module fibonacci
+
+Top level modules:
+	fibonacci
+
+} {} {}} {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/fullAdder.sv} {1 {vlog -work work -vopt -sv -stats=none {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/fullAdder.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module fullAdder
+
+Top level modules:
+	fullAdder
+
+} {} {}} {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/AND.sv} {1 {vlog -work work -vopt -sv -stats=none {//khensu/Home01/shadman/Desktop/School Work/ECE593/PreSiliconProject/homework1/AND.sv}
+QuestaSim-64 vlog 10.4c Compiler 2015.07 Jul 20 2015
+-- Compiling module AND
+
+Top level modules:
+	AND
 
 } {} {}}

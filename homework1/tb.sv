@@ -48,6 +48,20 @@ fib_num_test fibTest(
 				.overflow(overflw),
 				.data_out(data_out));
 
+/* FIB generation checker module instantiation */ 
+fib_gen_chkr fibChecker(
+				.clk(clk),
+				.reset_n(reset_n),
+				.load(load),
+				.clear(clear),
+				.order(order),
+				.data_in(data_in),
+				.done(done),
+				.error(error),
+				.overflow(overflw),
+				.data_out(data_out));
+
+				
 /* 10 ns Period clock */ 				
 initial begin 
 	forever
